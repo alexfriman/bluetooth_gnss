@@ -72,7 +72,7 @@ ThemeData _buildLightTheme() {
 }
 TextTheme _buildTextTheme(TextTheme base) {
   return base.copyWith(
-    titleMedium: base.titleSmall.copyWith(
+    subtitle1: base.subtitle1.copyWith(
       fontFamily: 'GoogleSans',
     ),
   );
@@ -1063,7 +1063,7 @@ class ScrollableTabsDemoState extends State<ScrollableTabsDemo> with SingleTicke
                           children: [
                             Text(
                               "${_is_ntrip_connected?'NTRIP Connected':'NTRIP Not Connected'}",
-                              style:  Theme.of(context).textTheme.titleSmall.copyWith(
+                              style:  Theme.of(context).textTheme.subtitle1.copyWith(
                                 fontFamily: 'GoogleSans',
                                 color: Colors.blueGrey,
                               ),
@@ -1146,7 +1146,7 @@ class ScrollableTabsDemoState extends State<ScrollableTabsDemo> with SingleTicke
                               children: [
                                 Text(
                                   "<UNDER DEVELOPMENT/>\n\nSorry, dev not done yet - please check again after next update...",
-                                  style:  Theme.of(context).textTheme.titleSmall.copyWith(
+                                  style:  Theme.of(context).textTheme.subtitle1.copyWith(
                                     fontFamily: 'GoogleSans',
                                     color: Colors.blueGrey,
                                   ),
