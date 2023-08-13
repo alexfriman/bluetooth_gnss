@@ -292,6 +292,11 @@ class settings_widget_state extends State<settings_widget> {
             "(Experimental) For use with 'EcoDroidGPS-Broadcast' device\nfrom www.ClearEvo.com\n(This device broadcasts GNSS location over BLE GAP\n to an any number of Android phones/tablets concurrently)",
             style: Theme.of(context).textTheme.caption,
           ),
+          CheckboxPreference("nRF52 BLE UART", 'ble_uart_mode'),
+          PreferenceText(
+            "(Experimental) Added by Alex for internal testing",
+            style: Theme.of(context).textTheme.caption,
+          ),
           CheckboxPreference("Secure RFCOMM connection", 'secure'),
           CheckboxPreference("Auto-reconnect (when disconnected)", 'reconnect'),
           CheckboxPreference("Autostart (connect on phone boot)", 'autostart'),
