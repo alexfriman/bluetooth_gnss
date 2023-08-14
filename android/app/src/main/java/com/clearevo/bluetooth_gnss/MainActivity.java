@@ -88,6 +88,7 @@ public class MainActivity extends FlutterActivity implements gnss_sentence_parse
                                 gnssConnectionParams.setDisableNtrip(Boolean.TRUE.equals(call.argument("disable_ntrip")));
                                 gnssConnectionParams.setDisableNtrip(Boolean.TRUE.equals(call.argument("disable_ntrip")));
                                 gnssConnectionParams.setGapMode(Boolean.TRUE.equals(call.argument("ble_gap_scan_mode")));
+                                gnssConnectionParams.setBleUartMode(Boolean.TRUE.equals(call.argument("ble_uart_mode")));
                                 for (String pk : bluetooth_gnss_service.REQUIRED_INTENT_EXTRA_PARAM_KEYS) {
                                     gnssConnectionParams.getExtraParams().put(pk, call.argument(pk));
                                 }
