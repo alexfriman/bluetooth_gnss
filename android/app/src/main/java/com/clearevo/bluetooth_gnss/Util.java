@@ -26,7 +26,7 @@ public class Util {
         gnssConnectionParams.setLogBtRx(prefs.getBoolean("flutter.pref_log_bt_rx", false));
         gnssConnectionParams.setDisableNtrip(prefs.getBoolean("flutter.pref_disable_ntrip", false));
         gnssConnectionParams.setGapMode(prefs.getBoolean("flutter.pref_ble_gap_scan_mode", false));
-
+        gnssConnectionParams.setBleUartMode(prefs.getBoolean("flutter.pref_ble_uart_mode", false));
         for (String pk : bluetooth_gnss_service.REQUIRED_INTENT_EXTRA_PARAM_KEYS) {
             final String value = prefs.getString("flutter.pref_" + pk, null);
             if (value != null) gnssConnectionParams.getExtraParams().put(pk, value);
